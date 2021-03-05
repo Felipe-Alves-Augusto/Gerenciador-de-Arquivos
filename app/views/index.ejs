@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Hcode Treinamentos">
+<title>Gerenciador de Arquivos</title>
+<link href="bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="topo">
+        <h2><i class="fas fa-folder"></i> Gerenciador de Arquivos</h2>
+        <nav id="menu" class="menu">
+            <i class="fas fa-bars"></i>
+        </nav><!--menu-->
+    </header><!--topo-->
+    <aside class="lados">
+        <aside class="left">
+            <div class="content-left">
+                <i class="fas fa-archive"></i>
+         
+            </div><!--content-left-->
+            <div class="options">
+                <p>Meus Arquivos</p>
+                <p>Compartilhamento</p>
+                <p>Solicitações de Arquivos</p>
+                <p>Arquivos excluídos</p>
+            </div><!--options-->
+        </aside><!--lados-->
+        <aside id="right" class="right show">
+            <button class="btn btn-primary" type="button" id="send-file">Enviar Arquivo</button>
+            <input type="file" id="files" style="display:none;" multiple>
+            <button class="btn" type="button" id="new-folder"><i class="far fa-folder"></i> Nova pasta</button>
+            <button style="display: none;"  class="btn" id="renomear"><i class="fas fa-pencil-alt"></i> Renomear arquivo</button>
+            <button style="display: none;"  class="btn btn-danger" id="delete"><i class="fas fa-trash-alt"></i> Deletar arquivo</button>
+        
+        </aside><!--right-->
+        <section class="content">
+            <h2>Meus Arquivos</h2>
+            <nav class="breadcrumb" id="browser-location" style="--bs-breadcrumb-divider: '>';margin-top: 15px;" aria-label="breadcrumb">
+
+              </nav><!--breadcrumb-->
+            <ul class="list-files">
+                
+
+            </ul><!--list-files-->
+            
+        </section><!--section-->
+        <div class="clear"></div>
+    </aside><!--lados-->
+    
+ 
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+
+<script src="src/controller/dropbox.js"></script>
+<script src="src/index.js"></script>
+<script src="https://kit.fontawesome.com/8debdb91c9.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

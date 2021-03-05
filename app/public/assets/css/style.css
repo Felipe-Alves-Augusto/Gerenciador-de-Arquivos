@@ -1,0 +1,206 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+html, body{
+  height: 100%;
+}
+
+.clear{
+  clear: both;
+}
+
+.topo{
+  width: 100%;
+  height: 60px;
+  background-color: var(--bs-info);
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.topo h2{
+  color: var(--bs-light);
+  font-size: 18px;
+}
+
+.menu i{
+  color: var(--bs-light);
+  font-size: 25px;
+  cursor: pointer;
+
+}
+
+.lados{
+
+  height: 100%;
+}
+
+.lados .left{
+  width: 15%;
+  height: 100%;
+  
+  float: left;
+}
+
+.left .content-left{
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+.left .content-left i{
+  font-size: 50px;
+}
+
+.left .options{
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--bs-primary);
+}
+
+.lados .right{
+  width: 20%;
+  height: 100%;
+  padding: 50px 2%;
+  float: right;
+  overflow-x: hidden;
+
+}
+
+.hide{
+  display: none;
+ 
+}
+
+.show{
+  display: block;
+  
+}
+
+.right button{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.right button:nth-of-type(3){
+  color: var(--bs-primary);
+}
+.right button:nth-of-type(2){
+  color: var(--bs-primary);
+}
+
+.content{  
+  margin: 0 auto;
+  
+}
+
+.content h2{
+  margin-top: 25px;
+  font-size: 20px;
+  display: inline-block;
+
+}
+
+.breadcrumb .item span i{
+  margin: 0px 5px;
+  
+}
+
+.content ul{
+  list-style: none;
+  
+}
+
+
+
+.list-files li{
+  width: 15%;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 15px 5px;
+  border-radius:20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.list-files li .item i{
+  font-size: 60px;
+}
+.list-files li .item p{
+    width: 100%;
+    margin-top: 10px;
+    
+    
+    
+}
+
+
+
+
+.selected{
+  background-color: var(--bs-dark);
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px var(--bs-dark);
+}
+
+
+
+
+
+
+
+
+.content ul h2{
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: var(--bs-dark);
+  font-weight: bolder;
+}
+
+
+.rodape{
+  width: 100%;
+  
+}
+
+.progress{
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 30px;
+  
+}
+
+
+
+
+
