@@ -57,35 +57,13 @@ html, body{
 }
 
 .lados{
-
   height: 100%;
 }
 
-.lados .left{
-  width: 15%;
-  height: 100%;
-  
-  float: left;
-}
 
-.left .content-left{
-  display: flex;
-  justify-content: center;
 
-  
-}
 
-.left .content-left i{
-  font-size: 50px;
-}
 
-.left .options{
-  margin-top: 30px;
-  text-align: center;
-  text-decoration: underline;
-  cursor: pointer;
-  color: var(--bs-primary);
-}
 
 .lados .right{
   width: 20%;
@@ -93,6 +71,7 @@ html, body{
   padding: 50px 2%;
   float: right;
   overflow-x: hidden;
+  margin-top: 13px;
 
 }
 
@@ -119,6 +98,7 @@ html, body{
 }
 
 .content{  
+  padding: 0 70px;
   margin: 0 auto;
   
 }
@@ -163,20 +143,11 @@ html, body{
     
 }
 
-
-
-
 .selected{
   background-color: var(--bs-dark);
   border-radius: 20px;
   box-shadow: 0px 0px 5px var(--bs-dark);
 }
-
-
-
-
-
-
 
 
 .content ul h2{
@@ -187,18 +158,9 @@ html, body{
 }
 
 
-.rodape{
-  width: 100%;
-  
-}
 
-.progress{
-  width: 50%;
-  margin: 0 auto;
-  position: relative;
-  bottom: 30px;
-  
-}
+
+
 
 
 
