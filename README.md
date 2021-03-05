@@ -8,20 +8,31 @@
  
  Linguagens:HTML,CSS E JAVASCRIPT
  
+ 
  Frameworks: node,formidable, express-generator,fs,boostrap
  
+ 
  Tipos de Arquivos que podem ser insiridos no sistema:
+ 
  Imagens: PNG,JPG E JPEG;
+ 
  PDF;
+ 
  Arquivos WORD E POWERPOINT;
+ 
  Arquivos músicas e vídeos
+ 
  
  OBS:NÃO CONSEGUIR HOSPEDAR O PROJETO EM NENHUM LUGAR ENTÃO SE QUISER TESTAR PRECISA FAZER OS SEGUINTES PASSOS:
  
  1.Baixar o projeto
+ 
  2. Abra o prompt de comando
+ 
  3. entre na pasta app cd C:\Users\nomeDoSeuUsuario\GerenciadorArquivos\app
+ 
  4. npm start
+ 
  5. no navegador localhost:3000
 
 OBS:No momento o projeto não está responsivo mais eu já estou trabalhando nisso.
