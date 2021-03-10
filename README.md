@@ -27,6 +27,8 @@
  
  É necessário ter o node instalado na sua máquina;
  
+ 0. npm install
+ 
  1.Baixar o projeto
  
  2. Abra o prompt de comando
