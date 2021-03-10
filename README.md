@@ -30,9 +30,17 @@
  2. Abra o prompt de comando
  
  3. entre na pasta app cd C:\Users\nomeDoSeuUsuario\GerenciadorArquivos\app
+
+4. npm install express-generator --save
+
+5. npm install formidable --save
+
+6. npm install fs --save
+
+7.npm install -g bower
  
- 4. npm start
+ 8. npm start
  
- 5. no navegador localhost:3000
+ 9. no navegador localhost:3000
 
 OBS:No momento o projeto não está responsivo mais eu já estou trabalhando nisso.
