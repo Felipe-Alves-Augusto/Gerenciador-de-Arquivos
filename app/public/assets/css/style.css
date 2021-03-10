@@ -157,6 +157,16 @@ html, body{
   font-weight: bolder;
 }
 
+.rodape{
+  width: 100%;
+  padding: 15px 5%;
+  height: 60px;
+  background-color: var(--bs-info);
+  text-align: center;
+  color: var(--bs-light);
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
 
 
 

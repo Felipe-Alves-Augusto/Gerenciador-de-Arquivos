@@ -1,5 +1,3 @@
-
-
 class Gerenciador {
 
     constructor(){
@@ -22,6 +20,8 @@ class Gerenciador {
         this.newFolder();
         this.openFolder();
         this.EventsMenu();
+        this.renameFolder();
+       
         
 
 
@@ -233,6 +233,7 @@ class Gerenciador {
 
         switch(files.type){
             case 'folder':
+          
                 return `
                 
                 
@@ -252,7 +253,6 @@ class Gerenciador {
                 <div class="item">
                     <i style="color: var(--bs-danger);" class="fas fa-file-pdf"></i>
                     <p style="color:var(--bs-primary)">${files.name}</p>
-
                 </div><!--item-->
                 
         
@@ -312,23 +312,19 @@ class Gerenciador {
             case 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
             case 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
                 return `
-
                 <div class="item">
                     <i style="color:var(--bs-info)" class="fas fa-file-word"></i>
                     <p style="color:var(--bs-primary)">${files.name}</p>
                 </div><!--item-->
-
                 `
             break;
             
             case "application/vnd.openxmlformats-officedocument.presentationml.presentation":
                 return `
-
                 <div class="item">
                 <i style="color:var(--bs-orange)" class="fas fa-file-powerpoint"></i>
                     <p style="color:var(--bs-primary)">${files.name}</p>
                 </div><!--item-->
-
                 `
 
         }
@@ -353,7 +349,6 @@ class Gerenciador {
         li.innerHTML = `
             ${this.pegarTipoFiles(files)}
             
-
         `
         this.initsLi(li);
 
@@ -384,12 +379,20 @@ class Gerenciador {
         })
     }
 
+    
+
+
     renameAndDelete(){
         //fazendo a edição dos arquivos
-        this.btnRename.addEventListener('click',event=>{
 
+           
+        
+
+        this.btnRename.addEventListener('click',event=>{
+            
             let li = this.getSelection()[0];
             // precisamos fazer um parse para transformar em objeto denovo pq ele ta como string
+          
             let files = JSON.parse(li.dataset.files);
             console.log(files);
             let inputRename = prompt('Digite um novo nome:',files.name);
@@ -403,10 +406,11 @@ class Gerenciador {
                 
             }
 
-            this.btnDeletar.style.display = 'none';
-            this.btnRename.style.display = 'none';
-
         })
+
+       
+
+    
 
         this.btnDeletar.addEventListener('click',event=>{
 
@@ -416,13 +420,10 @@ class Gerenciador {
                 response.forEach(remove=>{
 
                     if(remove.campos.key){
+
+
                         this.getFirebase().child(remove.campos.key).remove();
 
-                        
-
-
-
-                    
                     }
 
                     this.btnDeletar.style.display = 'none';
@@ -506,7 +507,6 @@ class Gerenciador {
                 //vai gerar um link  na pasta anterior
                 span.className = 'item';
                 span.innerHTML =`
-
                 <span><a data-path="${pathFolder.join('/')}" href="">${folder}</a></span>
                 <span> <i class="fas fa-chevron-right"></i> </span>
                 <span></span>
@@ -553,6 +553,8 @@ class Gerenciador {
 
                 el.classList.remove('selected');
 
+                
+
             })
             
           }
@@ -561,6 +563,8 @@ class Gerenciador {
           li.classList.toggle('selected');
 
           this.renameAndDelete();
+
+          
 
         })
 
@@ -589,4 +593,3 @@ class Gerenciador {
     }
 
 }
-
