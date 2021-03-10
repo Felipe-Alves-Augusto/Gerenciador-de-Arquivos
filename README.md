@@ -25,6 +25,8 @@
  
  OBS:NÃO CONSEGUIR HOSPEDAR O PROJETO EM NENHUM LUGAR ENTÃO SE QUISER TESTAR PRECISA FAZER OS SEGUINTES PASSOS:
  
+ É necessário ter o node instalado na sua máquina;
+ 
  1.Baixar o projeto
  
  2. Abra o prompt de comando
