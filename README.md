@@ -27,24 +27,25 @@
  
  É necessário ter o node instalado na sua máquina;
  
- 0. npm install
  
  1.Baixar o projeto
  
  2. Abra o prompt de comando
  
  3. entre na pasta app cd C:\Users\nomeDoSeuUsuario\GerenciadorArquivos\app
-
-4. npm install express-generator --save
-
-5. npm install formidable --save
-
-6. npm install fs --save
-
-7.npm install -g bower
  
- 8. npm start
+ 4.  npm install
+
+5. npm install express-generator --save
+
+6. npm install formidable --save
+
+7. npm install fs --save
+
+8.npm install -g bower
  
- 9. no navegador localhost:3000
+ 9. npm start
+ 
+ 10. no navegador localhost:3000
 
 OBS:No momento o projeto não está responsivo mais eu já estou trabalhando nisso.
