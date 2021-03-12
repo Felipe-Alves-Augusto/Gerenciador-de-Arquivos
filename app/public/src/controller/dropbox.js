@@ -21,6 +21,8 @@ class Gerenciador {
         this.openFolder();
         this.EventsMenu();
         this.renameFolder();
+        
+        
        
         
 
@@ -377,6 +379,30 @@ class Gerenciador {
 
 
         })
+
+    
+    }
+
+
+    renameFolder(){
+
+        if(this.listarFiles.addEventListener('click',event=>{
+
+            let li = this.getSelection()[0];
+
+            let files = JSON.parse(li.dataset.files);
+
+            if(files.type == 'folder'){
+                this.btnRename.innerHTML = '<i class="fas fa-pencil-alt"></i> Renomear pasta';
+                
+        
+            } else{
+                this.btnRename.innerHTML = '<i class="fas fa-pencil-alt"></i> Renomear arquivo';
+            }
+            
+
+       }));
+
     }
 
     
@@ -385,17 +411,15 @@ class Gerenciador {
     renameAndDelete(){
         //fazendo a edição dos arquivos
 
-           
         
-
         this.btnRename.addEventListener('click',event=>{
             
             let li = this.getSelection()[0];
             // precisamos fazer um parse para transformar em objeto denovo pq ele ta como string
           
             let files = JSON.parse(li.dataset.files);
-            console.log(files);
-            let inputRename = prompt('Digite um novo nome:',files.name);
+            //console.log(files);
+            let inputRename = prompt('Digite um novo nome para o arquivo:',files.name);
             
 
             if(inputRename){
@@ -407,10 +431,6 @@ class Gerenciador {
             }
 
         })
-
-       
-
-    
 
         this.btnDeletar.addEventListener('click',event=>{
 
@@ -563,6 +583,7 @@ class Gerenciador {
           li.classList.toggle('selected');
 
           this.renameAndDelete();
+          
 
           
 
